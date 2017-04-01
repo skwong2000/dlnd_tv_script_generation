@@ -13055,7 +13055,7 @@ Model Trained and Saved
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">pick_word</span><span class="p">(</span><span class="n">probabilities</span><span class="p">,</span> <span class="n">int_to_vocab</span><span class="p">):</span>
@@ -13067,7 +13067,8 @@ Model Trained and Saved
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="c1"># TODO: Implement Function</span>
     <span class="c1"># return None</span>
-    <span class="n">index</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">probabilities</span><span class="p">)</span>
+    <span class="c1"># index = np.argmax(probabilities)</span>
+    <span class="n">index</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">int_to_vocab</span><span class="p">)),</span> <span class="n">p</span><span class="o">=</span><span class="n">probabilities</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">int_to_vocab</span><span class="p">[</span><span class="n">index</span><span class="p">]</span>
 
 
@@ -13111,7 +13112,7 @@ Model Trained and Saved
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">gen_length</span> <span class="o">=</span> <span class="mi">200</span>
@@ -13172,18 +13173,22 @@ Model Trained and Saved
 <div class="prompt"></div>
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>moe_szyslak:(into phone) gotcha ya down for forty bucks. good luck your eminence.
-lenny_leonard: no way. when a guy who loves america cries, it makes you think.
-moe_szyslak: hey, those girls you paid to scream are doing a girl, a m.
-homer_simpson:(singing) baby, glove slap...
-moe_szyslak:(excited) then we go, clipped to face and see me!
-moe_szyslak: ah, business is slow. people today are healthier and drinking less. you gotta have some fun.
-seymour_skinner: who are all of you.
-barney_gumble: you know, i heard of a new reality show where they come world here, i&#39;ll have a very reliable sauce, news involving multiple senators.
-kent_brockman: i couldn&#39;t agree more. when you gotta do is fight drederick tatum. and if you ain&#39;t seen nobody.
-moe_szyslak: yeah, i figured out that the best way for me.
+<pre>moe_szyslak: that comes in kid sizes too.
+
+
+homer_simpson: we&#39;re not here for your moe.
+moe_szyslak: ah, that&#39;s okay. it&#39;s like my dad always said is my kids it coming.(shaking head) that&#39;s how it is, though: one day your bar are pawed through the next to our disposal.
 homer_simpson: well, i guess i&#39;ll have to wait for marge to show some.
-marge_simpson: oh, what are you
+marge_simpson: oh, yeah.
+krusty_the_clown: so, i&#39;m watchin&#39; tv.
+
+
+homer_simpson:(moan) i don&#39;t know anything about her hair?
+lenny_leonard:(angry) oh, homer, what about the japanese you?
+moe_szyslak: well, i dunno, are you man enough to throw a punch, well, just ran out sayin&#39; he don&#39;t love you to charm.
+moe_szyslak: uh-huh. so, ah, where might this sea be located?
+homer_simpson: boy, i love valentine&#39;s day. stir a drop of jägermeister into some kind of booze all.
+lenny_leonard:(mild chuckle) that&#39;s sweet, but dignified.) now let&#39;s
 </pre>
 </div>
 </div>
